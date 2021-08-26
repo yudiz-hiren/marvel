@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Jpc-NR-lJj" customClass="SearchHeader" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fh-zA-vEb" customClass="KPRoundView" customModule="Marvel" customModuleProvider="target">
+                    <rect key="frame" x="10" y="10" width="459" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="D4o-k9-4f8">
+                            <rect key="frame" x="18" y="19" width="12" height="12"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZV-85-DnL">
+                            <rect key="frame" x="48" y="0.0" width="393" height="50"/>
+                            <color key="tintColor" name="c0E0840"/>
+                            <color key="textColor" name="c0E0840"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                            <connections>
+                                <action selector="tfChange" destination="Jpc-NR-lJj" eventType="editingChanged" id="7BN-Xw-Od2"/>
+                                <outlet property="delegate" destination="Jpc-NR-lJj" id="gdy-UR-7hL"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="cF0F2F5"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CZV-85-DnL" secondAttribute="trailing" constant="18" id="2Az-eV-B0C"/>
+                        <constraint firstItem="D4o-k9-4f8" firstAttribute="leading" secondItem="2fh-zA-vEb" secondAttribute="leading" constant="18" id="4Ug-Su-pJq"/>
+                        <constraint firstAttribute="bottom" secondItem="CZV-85-DnL" secondAttribute="bottom" id="DY8-j4-zWK"/>
+                        <constraint firstItem="D4o-k9-4f8" firstAttribute="centerY" secondItem="2fh-zA-vEb" secondAttribute="centerY" id="E5x-Y2-eU3"/>
+                        <constraint firstItem="CZV-85-DnL" firstAttribute="leading" secondItem="D4o-k9-4f8" secondAttribute="trailing" constant="18" id="WUx-1g-xkJ"/>
+                        <constraint firstItem="CZV-85-DnL" firstAttribute="top" secondItem="2fh-zA-vEb" secondAttribute="top" id="b9x-k9-kCx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VVN-sx-Lf3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2fh-zA-vEb" secondAttribute="bottom" constant="10" id="4mZ-np-saW"/>
+                <constraint firstItem="2fh-zA-vEb" firstAttribute="top" secondItem="Jpc-NR-lJj" secondAttribute="top" constant="10" id="9nF-3B-y0k"/>
+                <constraint firstItem="2fh-zA-vEb" firstAttribute="leading" secondItem="VVN-sx-Lf3" secondAttribute="leading" constant="10" id="blJ-c4-YhC"/>
+                <constraint firstItem="VVN-sx-Lf3" firstAttribute="trailing" secondItem="2fh-zA-vEb" secondAttribute="trailing" constant="10" id="sFb-df-eqU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tf" destination="CZV-85-DnL" id="Bbm-dn-Fhu"/>
+            </connections>
+            <point key="canvasLocation" x="-175" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_search" width="12" height="12"/>
+        <namedColor name="c0E0840">
+            <color red="0.054901960784313725" green="0.031372549019607843" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cF0F2F5">
+            <color red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

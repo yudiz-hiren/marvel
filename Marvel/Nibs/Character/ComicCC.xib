@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FVE-5O-dS6" customClass="ComicCC" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v9k-lL-FHG">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-gR-lEm" customClass="KPRoundView" customModule="Marvel" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZX-L6-yGf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="265"/>
+                                <color key="backgroundColor" name="cF0F2F5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlw-lm-rFs">
+                                <rect key="frame" x="0.0" y="265" width="240" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-2E-ore">
+                                        <rect key="frame" x="6.5" y="9.5" width="227.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                        <color key="textColor" name="c0E0840"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="9P3-2E-ore" firstAttribute="centerY" secondItem="tlw-lm-rFs" secondAttribute="centerY" id="EXx-xn-pmC"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9P3-2E-ore" secondAttribute="trailing" constant="5" id="OSt-bn-L31"/>
+                                    <constraint firstItem="9P3-2E-ore" firstAttribute="centerX" secondItem="tlw-lm-rFs" secondAttribute="centerX" id="Y1G-WT-lla"/>
+                                    <constraint firstAttribute="height" constant="55" id="wIe-9N-bDb"/>
+                                    <constraint firstItem="9P3-2E-ore" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tlw-lm-rFs" secondAttribute="leading" constant="5" id="wg2-5F-mT7"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-BN-Gaw">
+                                <rect key="frame" x="110" y="122.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bZX-L6-yGf" secondAttribute="trailing" id="5mI-yn-LcG"/>
+                            <constraint firstItem="tlw-lm-rFs" firstAttribute="top" secondItem="bZX-L6-yGf" secondAttribute="bottom" id="6cg-04-6v9"/>
+                            <constraint firstItem="EKS-BN-Gaw" firstAttribute="centerX" secondItem="bZX-L6-yGf" secondAttribute="centerX" id="FlA-RM-z5b"/>
+                            <constraint firstItem="bZX-L6-yGf" firstAttribute="leading" secondItem="SXQ-gR-lEm" secondAttribute="leading" id="HlH-vq-8pf"/>
+                            <constraint firstAttribute="bottom" secondItem="tlw-lm-rFs" secondAttribute="bottom" id="JCC-wc-28u"/>
+                            <constraint firstItem="tlw-lm-rFs" firstAttribute="leading" secondItem="SXQ-gR-lEm" secondAttribute="leading" id="VVc-pV-Ugb"/>
+                            <constraint firstAttribute="trailing" secondItem="tlw-lm-rFs" secondAttribute="trailing" id="o7I-Yu-k2g"/>
+                            <constraint firstItem="bZX-L6-yGf" firstAttribute="top" secondItem="SXQ-gR-lEm" secondAttribute="top" id="r02-c9-Cxz"/>
+                            <constraint firstItem="EKS-BN-Gaw" firstAttribute="centerY" secondItem="bZX-L6-yGf" secondAttribute="centerY" id="sDu-QZ-SYi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="cF0F2F5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SXQ-gR-lEm" secondAttribute="bottom" id="10W-rh-6Yf"/>
+                    <constraint firstAttribute="trailing" secondItem="SXQ-gR-lEm" secondAttribute="trailing" id="RmR-T8-noa"/>
+                    <constraint firstItem="SXQ-gR-lEm" firstAttribute="top" secondItem="v9k-lL-FHG" secondAttribute="top" id="Sia-CL-rvq"/>
+                    <constraint firstItem="SXQ-gR-lEm" firstAttribute="leading" secondItem="v9k-lL-FHG" secondAttribute="leading" id="T6y-xh-vUd"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="240" height="320"/>
+            <connections>
+                <outlet property="activityIndicator" destination="EKS-BN-Gaw" id="sph-6W-1OS"/>
+                <outlet property="imgView" destination="bZX-L6-yGf" id="I2n-Mj-PIc"/>
+                <outlet property="lblName" destination="9P3-2E-ore" id="tXF-XP-KUV"/>
+            </connections>
+            <point key="canvasLocation" x="-604.34782608695662" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="c0E0840">
+            <color red="0.054901960784313725" green="0.031372549019607843" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cF0F2F5">
+            <color red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

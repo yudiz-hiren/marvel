@@ -1,0 +1,13 @@
+Marvel.xcodeproj/xcuserdata
+Marvel.xcodeproj/xcshareddata
+Marvel.xcodeproj/project.xcworkspace
+Marvel.xcodeproj/project.xcworkspace/xcuserdata
+Marvel.xcodeproj/project.xcworkspace/Marvel.xcworkspace
+Marvel.xcworkspace/contents.xcworkspacedata
+Marvel.xcworkspace/xcuserdata
+Marvel.xcworkspace
+Marvel.xcworkspace/xcshareddata
+Pods
+*.DS_Store
+.DS_Store
+Podfile.lock

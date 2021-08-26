@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qvg-8v-B1C" customClass="NoDataCC" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a8h-5f-SZh">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No comics found" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEE-Y0-m7D">
+                        <rect key="frame" x="20" y="0.0" width="99" height="18"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                        <color key="textColor" name="c202020"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lEE-Y0-m7D" firstAttribute="top" secondItem="a8h-5f-SZh" secondAttribute="top" id="TCc-aA-Lf6"/>
+                    <constraint firstItem="lEE-Y0-m7D" firstAttribute="leading" secondItem="a8h-5f-SZh" secondAttribute="leading" constant="20" id="XW4-IL-Urc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lEE-Y0-m7D" secondAttribute="trailing" constant="10" id="m3S-sl-LmT"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="260" height="113"/>
+            <connections>
+                <outlet property="lblMessage" destination="lEE-Y0-m7D" id="YRd-DT-iRY"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="32"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="c202020">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
